@@ -66,7 +66,16 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
-            this.tv = new System.Windows.Forms.TreeView();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.textedit_filepath = new DevExpress.XtraEditors.TextEdit();
+            this.btn_clear = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_find = new DevExpress.XtraEditors.SimpleButton();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -79,6 +88,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textedit_filepath.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -121,9 +135,13 @@
             this.barButtonItem15,
             this.barButtonItem16,
             this.barButtonItem17,
-            this.barButtonItem18});
+            this.barButtonItem18,
+            this.barButtonItem19,
+            this.barButtonItem20,
+            this.barStaticItem1,
+            this.barButtonItem21});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 23;
+            this.ribbonControl1.MaxItemId = 28;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -228,9 +246,9 @@
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.tv);
+            this.splitContainer3.Panel1.Controls.Add(this.splitContainer4);
             this.splitContainer3.Size = new System.Drawing.Size(286, 484);
-            this.splitContainer3.SplitterDistance = 238;
+            this.splitContainer3.SplitterDistance = 265;
             this.splitContainer3.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -360,8 +378,9 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem14);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem15);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem21);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "零部件及结构管理";
+            this.ribbonPageGroup4.Text = "产品零部件及结构管理";
             // 
             // barButtonItem14
             // 
@@ -409,13 +428,99 @@
             this.barButtonItem18.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.LargeGlyph")));
             this.barButtonItem18.Name = "barButtonItem18";
             // 
-            // tv
+            // barButtonItem19
             // 
-            this.tv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tv.Location = new System.Drawing.Point(0, 0);
-            this.tv.Name = "tv";
-            this.tv.Size = new System.Drawing.Size(286, 238);
-            this.tv.TabIndex = 0;
+            this.barButtonItem19.Caption = "路径选择";
+            this.barButtonItem19.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.Glyph")));
+            this.barButtonItem19.Id = 23;
+            this.barButtonItem19.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.LargeGlyph")));
+            this.barButtonItem19.Name = "barButtonItem19";
+            // 
+            // barButtonItem20
+            // 
+            this.barButtonItem20.Caption = "查看";
+            this.barButtonItem20.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.Glyph")));
+            this.barButtonItem20.Id = 25;
+            this.barButtonItem20.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.LargeGlyph")));
+            this.barButtonItem20.Name = "barButtonItem20";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "barStaticItem1";
+            this.barStaticItem1.Id = 26;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(12, 5);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(156, 14);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "请输入要查看的文件夹地址：";
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.btn_find);
+            this.splitContainer4.Panel1.Controls.Add(this.btn_clear);
+            this.splitContainer4.Panel1.Controls.Add(this.textedit_filepath);
+            this.splitContainer4.Panel1.Controls.Add(this.labelControl1);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.treeView1);
+            this.splitContainer4.Size = new System.Drawing.Size(286, 265);
+            this.splitContainer4.SplitterDistance = 52;
+            this.splitContainer4.TabIndex = 0;
+            // 
+            // textedit_filepath
+            // 
+            this.textedit_filepath.Location = new System.Drawing.Point(12, 26);
+            this.textedit_filepath.MenuManager = this.ribbonControl1;
+            this.textedit_filepath.Name = "textedit_filepath";
+            this.textedit_filepath.Size = new System.Drawing.Size(157, 20);
+            this.textedit_filepath.TabIndex = 1;
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Location = new System.Drawing.Point(172, 23);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(54, 23);
+            this.btn_clear.TabIndex = 2;
+            this.btn_clear.Text = "清除";
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_find
+            // 
+            this.btn_find.Location = new System.Drawing.Point(229, 23);
+            this.btn_find.Name = "btn_find";
+            this.btn_find.Size = new System.Drawing.Size(54, 23);
+            this.btn_find.TabIndex = 3;
+            this.btn_find.Text = "查看";
+            this.btn_find.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(286, 209);
+            this.treeView1.TabIndex = 0;
+            // 
+            // barButtonItem21
+            // 
+            this.barButtonItem21.Caption = "回收站";
+            this.barButtonItem21.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.Glyph")));
+            this.barButtonItem21.Id = 27;
+            this.barButtonItem21.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.LargeGlyph")));
+            this.barButtonItem21.Name = "barButtonItem21";
             // 
             // MainForm
             // 
@@ -439,6 +544,12 @@
             this.splitContainer3.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel1.PerformLayout();
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textedit_filepath.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -481,6 +592,15 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private System.Windows.Forms.TreeView tv;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private System.Windows.Forms.SplitContainer splitContainer4;
+        private DevExpress.XtraEditors.SimpleButton btn_find;
+        private DevExpress.XtraEditors.SimpleButton btn_clear;
+        private DevExpress.XtraEditors.TextEdit textedit_filepath;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.TreeView treeView1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
     }
 }

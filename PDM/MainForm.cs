@@ -25,58 +25,55 @@ namespace PDM
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            TreeNode tn = new TreeNode();
-
-            tn.Text = "根目录";
-
-            getDirectories("", tn);
-
-            tv.Nodes.Add(tn);
+            
         }
-           
-
-        private void getDirectories(string path, TreeNode tn)
+        //结构树显示
+        #region
+        private void simpleButton2_Click(object sender, EventArgs e)
         {
-
-
-            string[] fileNames = Directory.GetFiles(path);
-            string[] directories = Directory.GetDirectories(path);
-
-
-            //先遍历这个目录下的文件夹
-            foreach (string dir in directories)
+            String rootFile = textedit_filepath.Text.ToString().Trim();
+            if (!Directory.Exists(rootFile))
             {
-
-                TreeNode subtn = new TreeNode();
-
-                subtn.Text = GetShorterFileName(dir);
-
-                getDirectories(dir, subtn);
-
-                tn.Nodes.Add(subtn);
-
+                MessageBox.Show("文件夹位置错误！");
             }
-            //再遍历这个目录下的文件
-            foreach (string file in fileNames)
+            else
             {
-
-                TreeNode subtn = new TreeNode();
-
-                subtn.Text = GetShorterFileName(file);
-
-                tn.Nodes.Add(subtn);
+                //根节点
+                TreeNode rootNode = new TreeNode();
+                rootNode.Text = rootFile;
+                //递归创建节点
+                createNodes(rootFile, rootNode);
+                //TreeView
+                treeView1.Nodes.Add(rootNode);
+                treeView1.ExpandAll();
             }
         }
-        //去除路径
-        private string GetShorterFileName(string filename)
-        {
 
-            return filename.Substring(filename.LastIndexOf("\\") + 1);
+        private void createNodes(String rootFile, TreeNode rootNode)
+        {
+            DirectoryInfo dInfo = new DirectoryInfo(rootFile);
+            //遍历当前文件系统下的所有文件和文件夹
+            foreach (FileSystemInfo info in dInfo.GetFileSystemInfos())
+            {
+                TreeNode node = new TreeNode();
+                node.Text = info.Name;
+                rootNode.Nodes.Add(node);
+                //文件夹
+                String file = info.FullName;
+                if (Directory.Exists(file))
+                {
+                    createNodes(file, node);
+                }
+            } 
 
         }
 
-
-
-
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            textedit_filepath.Text = "";
+            treeView1.Nodes.Clear();
+        }
+        #endregion
     }
 }
+
