@@ -110,6 +110,7 @@
             this.Ok.Tag = "1";
             this.Ok.Text = "  登 陆";
             this.Ok.UseVisualStyleBackColor = false;
+            this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
             // retreat
             // 
@@ -138,7 +139,6 @@
             this.Password.Size = new System.Drawing.Size(220, 29);
             this.Password.TabIndex = 31;
             this.Password.Tag = "1";
-            this.Password.Text = "admin";
             this.Password.UseSystemPasswordChar = true;
             // 
             // Nameid

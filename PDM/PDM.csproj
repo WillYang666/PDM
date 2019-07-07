@@ -36,9 +36,11 @@
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -55,26 +57,140 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassStore\connectDataBase.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="User\Adduser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="User\Adduser.designer.cs">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\BOM\BOM_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\BOM\BOM_add.designer.cs">
+      <DependentUpon>BOM_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\BOM\BOM_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\BOM\BOM_edit.Designer.cs">
+      <DependentUpon>BOM_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\Materials Management\AddWL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\Materials Management\AddWL.designer.cs">
+      <DependentUpon>AddWL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassStore\connectDataBase.cs" />
+    <Compile Include="DataBase\Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Database.Designer.cs">
+      <DependentUpon>Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\Documents Management\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\Documents Management\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\ExcelToSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\ExcelToSQL.designer.cs">
+      <DependentUpon>ExcelToSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\Documents Management\Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\Documents Management\Insert.Designer.cs">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassStore\Program.cs" />
+    <Compile Include="Main Functional Modules\ProcessRoute\pr_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\ProcessRoute\pr_add.designer.cs">
+      <DependentUpon>pr_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoginForm.resx">
+    <Compile Include="ClassStore\PublicPass.cs" />
+    <Compile Include="ClassStore\SystemLog.cs" />
+    <Compile Include="ClassStore\SQLClass.cs" />
+    <Compile Include="Main Functional Modules\Materials Management\WLGLuptate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\Materials Management\WLGLuptate.designer.cs">
+      <DependentUpon>WLGLuptate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Functional Modules\ProcessRoute\pr_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Functional Modules\ProcessRoute\pr_edit.Designer.cs">
+      <DependentUpon>pr_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uptate_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\uptate_user.designer.cs">
+      <DependentUpon>uptate_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\user_info.Designer.cs">
+      <DependentUpon>user_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_authority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\user_authority.Designer.cs">
+      <DependentUpon>user_authority.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User\Adduser.resx">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\BOM\BOM_add.resx">
+      <DependentUpon>BOM_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\BOM\BOM_edit.resx">
+      <DependentUpon>BOM_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\Materials Management\AddWL.resx">
+      <DependentUpon>AddWL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\Documents Management\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\ExcelToSQL.resx">
+      <DependentUpon>ExcelToSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\Documents Management\Insert.resx">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\ProcessRoute\pr_add.resx">
+      <DependentUpon>pr_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -87,6 +203,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Main Functional Modules\Materials Management\WLGLuptate.resx">
+      <DependentUpon>WLGLuptate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Functional Modules\ProcessRoute\pr_edit.resx">
+      <DependentUpon>pr_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uptate_user.resx">
+      <DependentUpon>uptate_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\user_info.resx">
+      <DependentUpon>user_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\user_authority.resx">
+      <DependentUpon>user_authority.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +234,18 @@
   <ItemGroup>
     <None Include="Resources\567UmWZIYJ8.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
