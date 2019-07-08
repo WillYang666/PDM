@@ -82,7 +82,7 @@ namespace PDM
                 string kehudizhi = datarow["物料类型"].ToString();
                 string kehuwangzhi = datarow["物料属性"].ToString();
                 string suoshudijishi = datarow["物料图号"].ToString();
-                sql1 = string.Format("insert into Books_Info(物料编号,物料名称,物料类型,物料属性,物料图号) values('{0}','{1}','{2}','{3}','{4}')", kehubianhao, kehumingcheng, kehudizhi, kehuwangzhi,suoshudijishi);
+                sql1 = string.Format("insert into materials_management(物料编号,物料名称,物料类型,物料属性,物料图号) values('{0}','{1}','{2}','{3}','{4}')", kehubianhao, kehumingcheng, kehudizhi, kehuwangzhi,suoshudijishi);
                 SqlCommand cmd = new SqlCommand(sql1, conn);
                 cmd.CommandText = sql1;
                 cmd.ExecuteNonQuery();

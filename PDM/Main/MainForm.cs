@@ -1029,7 +1029,7 @@ namespace PDM
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                if(check==dt.Rows[0][i].ToString())
+                if(check==dt.Rows[i][0].ToString())
                 {
                     //在结构树中加载根节点
                     TreeNode tr = new TreeNode();
@@ -1040,7 +1040,7 @@ namespace PDM
                     tr.ImageIndex = 0;
 
                     DataTable dt2 = new DataTable();
-                    dt2 = SQLClass.SQLQuery("select * from bom where 车型='" + check + "'");
+                    dt2 = SQLClass.SQLQuery("select * from bom where 车型='" + check + "'and 所属组件='自行车'");
                     gridControl3.DataSource = dt2;//将数据放入gridview中
                     for (int j=0;j<dt2.Rows.Count;j++)
                     {
@@ -1049,6 +1049,20 @@ namespace PDM
                         _nodes.ImageIndex = 1;
                         //_nodes.SelectedImageIndex = 4;
                         tr.Nodes.Add(_nodes);
+
+
+                       DataTable dt3 = new DataTable();
+                        dt3 = SQLClass.SQLQuery("select * from bom where 所属组件='" + dt2.Rows[j]["零部件名称"].ToString() + "'");
+                        //gridControl3.DataSource = dt3;
+                        for(int ii=0;ii<dt3.Rows.Count;ii++)
+                        {
+                            TreeNode nodes =new TreeNode();
+                            nodes.Text = dt3.Rows[ii]["零部件名称"].ToString();
+                            nodes.ImageIndex = 1;
+                            _nodes.Nodes.Add(nodes);
+
+                        }
+
                     }
                     
                 }
@@ -1077,6 +1091,21 @@ namespace PDM
         {
             user_authority us = new user_authority();
             us.ShowDialog();
+        }
+
+        private void barButtonItem29_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认关闭系统？", "系统提示", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                this.Close();
+            }
+            
+        }
+
+        private void barButtonItem30_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Controls.Clear(); InitializeComponent();
         }
     }
 }

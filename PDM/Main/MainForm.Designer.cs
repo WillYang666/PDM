@@ -180,6 +180,9 @@
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -279,7 +282,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1378, 630);
+            this.splitContainer1.Size = new System.Drawing.Size(1161, 630);
             this.splitContainer1.SplitterDistance = 142;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -326,16 +329,18 @@
             this.barStaticItem4,
             this.barStaticItem5,
             this.barStaticItem6,
-            this.barStaticItem7});
+            this.barStaticItem7,
+            this.barButtonItem29,
+            this.barButtonItem30});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 45;
+            this.ribbonControl1.MaxItemId = 47;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1,
             this.repositoryItemTimeEdit1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1378, 145);
+            this.ribbonControl1.Size = new System.Drawing.Size(1161, 145);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // barButtonItem1
@@ -665,7 +670,8 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2,
             this.ribbonPageGroup1,
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "管理控制台";
             // 
@@ -683,7 +689,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem26);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "系统管理";
+            this.ribbonPageGroup1.Text = "用户管理";
             // 
             // ribbonPageGroup3
             // 
@@ -701,7 +707,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 457);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1133, 27);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(909, 27);
             // 
             // splitContainer2
             // 
@@ -719,8 +725,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer2.Panel2.Controls.Add(this.ribbonStatusBar1);
             this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
-            this.splitContainer2.Size = new System.Drawing.Size(1378, 484);
-            this.splitContainer2.SplitterDistance = 241;
+            this.splitContainer2.Size = new System.Drawing.Size(1161, 484);
+            this.splitContainer2.SplitterDistance = 248;
             this.splitContainer2.TabIndex = 0;
             // 
             // accordionControl1
@@ -733,7 +739,7 @@
             this.accordionControlElement4});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(241, 484);
+            this.accordionControl1.Size = new System.Drawing.Size(248, 484);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.Text = "accordionControl1";
             // 
@@ -796,7 +802,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1133, 457);
+            this.tabControl1.Size = new System.Drawing.Size(909, 457);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
@@ -807,7 +813,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1125, 431);
+            this.tabPage1.Size = new System.Drawing.Size(901, 431);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "文档管理栏";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -825,8 +831,8 @@
             // splitContainer10.Panel2
             // 
             this.splitContainer10.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer10.Size = new System.Drawing.Size(1119, 425);
-            this.splitContainer10.SplitterDistance = 159;
+            this.splitContainer10.Size = new System.Drawing.Size(895, 425);
+            this.splitContainer10.SplitterDistance = 127;
             this.splitContainer10.TabIndex = 1;
             // 
             // treeView1
@@ -834,7 +840,7 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(159, 425);
+            this.treeView1.Size = new System.Drawing.Size(127, 425);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect_1);
             // 
@@ -860,15 +866,15 @@
             // 
             this.splitContainer3.Panel2.Controls.Add(this.gridControl1);
             this.splitContainer3.Panel2.Controls.Add(this.webBrowser1);
-            this.splitContainer3.Size = new System.Drawing.Size(956, 425);
-            this.splitContainer3.SplitterDistance = 55;
+            this.splitContainer3.Size = new System.Drawing.Size(764, 425);
+            this.splitContainer3.SplitterDistance = 105;
             this.splitContainer3.TabIndex = 0;
             // 
             // simpleButton24
             // 
             this.simpleButton24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton24.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton24.Image")));
-            this.simpleButton24.Location = new System.Drawing.Point(842, 5);
+            this.simpleButton24.Location = new System.Drawing.Point(226, 51);
             this.simpleButton24.Name = "simpleButton24";
             this.simpleButton24.Size = new System.Drawing.Size(101, 41);
             this.simpleButton24.TabIndex = 7;
@@ -879,7 +885,7 @@
             // 
             this.simpleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(493, 5);
+            this.simpleButton1.Location = new System.Drawing.Point(119, 51);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(101, 41);
             this.simpleButton1.TabIndex = 6;
@@ -890,7 +896,7 @@
             // 
             this.simpleButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton6.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(725, 5);
+            this.simpleButton6.Location = new System.Drawing.Point(333, 4);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(101, 41);
             this.simpleButton6.TabIndex = 5;
@@ -901,7 +907,7 @@
             // 
             this.simpleButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton5.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(609, 5);
+            this.simpleButton5.Location = new System.Drawing.Point(333, 51);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(101, 41);
             this.simpleButton5.TabIndex = 4;
@@ -912,7 +918,7 @@
             // 
             this.btn_insert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_insert.Image = ((System.Drawing.Image)(resources.GetObject("btn_insert.Image")));
-            this.btn_insert.Location = new System.Drawing.Point(371, 4);
+            this.btn_insert.Location = new System.Drawing.Point(12, 51);
             this.btn_insert.Name = "btn_insert";
             this.btn_insert.Size = new System.Drawing.Size(101, 41);
             this.btn_insert.TabIndex = 3;
@@ -923,7 +929,7 @@
             // 
             this.simpleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(251, 4);
+            this.simpleButton3.Location = new System.Drawing.Point(226, 4);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(101, 41);
             this.simpleButton3.TabIndex = 2;
@@ -934,7 +940,7 @@
             // 
             this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(133, 4);
+            this.simpleButton2.Location = new System.Drawing.Point(119, 4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(101, 41);
             this.simpleButton2.TabIndex = 1;
@@ -945,7 +951,7 @@
             // 
             this.btn_pic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pic.Image = ((System.Drawing.Image)(resources.GetObject("btn_pic.Image")));
-            this.btn_pic.Location = new System.Drawing.Point(14, 4);
+            this.btn_pic.Location = new System.Drawing.Point(12, 4);
             this.btn_pic.Name = "btn_pic";
             this.btn_pic.Size = new System.Drawing.Size(101, 41);
             this.btn_pic.TabIndex = 0;
@@ -959,7 +965,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.ribbonControl1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(956, 366);
+            this.gridControl1.Size = new System.Drawing.Size(764, 316);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -978,7 +984,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(956, 366);
+            this.webBrowser1.Size = new System.Drawing.Size(764, 316);
             this.webBrowser1.TabIndex = 1;
             // 
             // tabPage2
@@ -987,7 +993,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1125, 431);
+            this.tabPage2.Size = new System.Drawing.Size(901, 431);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "物料管理栏";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1006,7 +1012,7 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.gridControl2);
-            this.splitContainer4.Size = new System.Drawing.Size(1119, 425);
+            this.splitContainer4.Size = new System.Drawing.Size(895, 425);
             this.splitContainer4.SplitterDistance = 151;
             this.splitContainer4.TabIndex = 0;
             // 
@@ -1024,7 +1030,7 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.panel1);
-            this.splitContainer5.Size = new System.Drawing.Size(1119, 151);
+            this.splitContainer5.Size = new System.Drawing.Size(895, 151);
             this.splitContainer5.SplitterDistance = 82;
             this.splitContainer5.TabIndex = 0;
             // 
@@ -1038,7 +1044,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1119, 82);
+            this.groupBox1.Size = new System.Drawing.Size(895, 82);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "维护栏";
@@ -1049,9 +1055,9 @@
             this.simpleButton10.Appearance.Options.UseFont = true;
             this.simpleButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton10.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.Image")));
-            this.simpleButton10.Location = new System.Drawing.Point(612, 20);
+            this.simpleButton10.Location = new System.Drawing.Point(403, 21);
             this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton10.Size = new System.Drawing.Size(109, 35);
             this.simpleButton10.TabIndex = 4;
             this.simpleButton10.Text = "导出EXCEL";
             this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
@@ -1062,9 +1068,9 @@
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(58, 20);
+            this.simpleButton4.Location = new System.Drawing.Point(15, 20);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton4.Size = new System.Drawing.Size(85, 35);
             this.simpleButton4.TabIndex = 0;
             this.simpleButton4.Text = "添加";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
@@ -1075,9 +1081,9 @@
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton9.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.Image")));
-            this.simpleButton9.Location = new System.Drawing.Point(479, 20);
+            this.simpleButton9.Location = new System.Drawing.Point(288, 21);
             this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton9.Size = new System.Drawing.Size(109, 35);
             this.simpleButton9.TabIndex = 3;
             this.simpleButton9.Text = "导入EXCEL";
             this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
@@ -1088,9 +1094,9 @@
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton7.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.Image")));
-            this.simpleButton7.Location = new System.Drawing.Point(195, 20);
+            this.simpleButton7.Location = new System.Drawing.Point(106, 21);
             this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton7.Size = new System.Drawing.Size(85, 35);
             this.simpleButton7.TabIndex = 1;
             this.simpleButton7.Text = "修改";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
@@ -1101,9 +1107,9 @@
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton8.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.Image")));
-            this.simpleButton8.Location = new System.Drawing.Point(334, 20);
+            this.simpleButton8.Location = new System.Drawing.Point(197, 20);
             this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton8.Size = new System.Drawing.Size(85, 35);
             this.simpleButton8.TabIndex = 2;
             this.simpleButton8.Text = "删除";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
@@ -1114,7 +1120,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1119, 65);
+            this.panel1.Size = new System.Drawing.Size(895, 65);
             this.panel1.TabIndex = 6;
             // 
             // groupBox2
@@ -1127,7 +1133,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1119, 65);
+            this.groupBox2.Size = new System.Drawing.Size(895, 65);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "查询栏";
@@ -1138,16 +1144,16 @@
             this.simpleButton11.Appearance.Options.UseFont = true;
             this.simpleButton11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton11.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.Image")));
-            this.simpleButton11.Location = new System.Drawing.Point(479, 9);
+            this.simpleButton11.Location = new System.Drawing.Point(418, 20);
             this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton11.Size = new System.Drawing.Size(94, 37);
             this.simpleButton11.TabIndex = 5;
             this.simpleButton11.Text = "检索";
             this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(349, 29);
+            this.textEdit1.Location = new System.Drawing.Point(306, 28);
             this.textEdit1.MenuManager = this.ribbonControl1;
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(100, 20);
@@ -1156,7 +1162,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl2.Location = new System.Drawing.Point(276, 30);
+            this.labelControl2.Location = new System.Drawing.Point(233, 29);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(68, 16);
@@ -1165,7 +1171,7 @@
             // 
             // comboBoxEdit1
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(148, 29);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(105, 28);
             this.comboBoxEdit1.MenuManager = this.ribbonControl1;
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1184,7 +1190,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl1.Location = new System.Drawing.Point(58, 30);
+            this.labelControl1.Location = new System.Drawing.Point(15, 29);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(85, 16);
@@ -1198,7 +1204,7 @@
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.MenuManager = this.ribbonControl1;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1119, 270);
+            this.gridControl2.Size = new System.Drawing.Size(895, 270);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -1216,7 +1222,7 @@
             this.tabPage3.Controls.Add(this.splitContainer11);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1125, 431);
+            this.tabPage3.Size = new System.Drawing.Size(901, 431);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "物料清单栏";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1234,8 +1240,8 @@
             // splitContainer11.Panel2
             // 
             this.splitContainer11.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer11.Size = new System.Drawing.Size(1125, 431);
-            this.splitContainer11.SplitterDistance = 214;
+            this.splitContainer11.Size = new System.Drawing.Size(901, 431);
+            this.splitContainer11.SplitterDistance = 171;
             this.splitContainer11.TabIndex = 1;
             // 
             // splitContainer12
@@ -1252,7 +1258,7 @@
             // splitContainer12.Panel2
             // 
             this.splitContainer12.Panel2.Controls.Add(this.groupBox8);
-            this.splitContainer12.Size = new System.Drawing.Size(214, 431);
+            this.splitContainer12.Size = new System.Drawing.Size(171, 431);
             this.splitContainer12.SplitterDistance = 207;
             this.splitContainer12.TabIndex = 0;
             // 
@@ -1262,7 +1268,7 @@
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Location = new System.Drawing.Point(0, 0);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(214, 207);
+            this.groupBox7.Size = new System.Drawing.Size(171, 207);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "引导树";
@@ -1272,7 +1278,7 @@
             this.treeView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView2.Location = new System.Drawing.Point(3, 17);
             this.treeView2.Name = "treeView2";
-            this.treeView2.Size = new System.Drawing.Size(208, 187);
+            this.treeView2.Size = new System.Drawing.Size(165, 187);
             this.treeView2.TabIndex = 0;
             this.treeView2.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView2_AfterSelect);
             // 
@@ -1282,7 +1288,7 @@
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox8.Location = new System.Drawing.Point(0, 0);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(214, 220);
+            this.groupBox8.Size = new System.Drawing.Size(171, 220);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "结构树";
@@ -1292,7 +1298,7 @@
             this.treeView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView3.Location = new System.Drawing.Point(3, 17);
             this.treeView3.Name = "treeView3";
-            this.treeView3.Size = new System.Drawing.Size(208, 200);
+            this.treeView3.Size = new System.Drawing.Size(165, 200);
             this.treeView3.TabIndex = 0;
             this.treeView3.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView3_AfterSelect);
             // 
@@ -1310,7 +1316,7 @@
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.gridControl3);
-            this.splitContainer6.Size = new System.Drawing.Size(907, 431);
+            this.splitContainer6.Size = new System.Drawing.Size(726, 431);
             this.splitContainer6.SplitterDistance = 160;
             this.splitContainer6.TabIndex = 0;
             // 
@@ -1328,7 +1334,7 @@
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.groupBox4);
-            this.splitContainer7.Size = new System.Drawing.Size(907, 160);
+            this.splitContainer7.Size = new System.Drawing.Size(726, 160);
             this.splitContainer7.SplitterDistance = 79;
             this.splitContainer7.TabIndex = 0;
             // 
@@ -1342,7 +1348,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(907, 79);
+            this.groupBox3.Size = new System.Drawing.Size(726, 79);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "维护栏";
@@ -1353,9 +1359,9 @@
             this.simpleButton12.Appearance.Options.UseFont = true;
             this.simpleButton12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton12.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton12.Image")));
-            this.simpleButton12.Location = new System.Drawing.Point(612, 20);
+            this.simpleButton12.Location = new System.Drawing.Point(458, 20);
             this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton12.Size = new System.Drawing.Size(109, 33);
             this.simpleButton12.TabIndex = 4;
             this.simpleButton12.Text = "导出EXCEL";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
@@ -1366,9 +1372,9 @@
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.simpleButton13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton13.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.Image")));
-            this.simpleButton13.Location = new System.Drawing.Point(58, 20);
+            this.simpleButton13.Location = new System.Drawing.Point(17, 20);
             this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton13.Size = new System.Drawing.Size(85, 33);
             this.simpleButton13.TabIndex = 0;
             this.simpleButton13.Text = "添加";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
@@ -1379,9 +1385,9 @@
             this.simpleButton14.Appearance.Options.UseFont = true;
             this.simpleButton14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton14.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton14.Image")));
-            this.simpleButton14.Location = new System.Drawing.Point(479, 20);
+            this.simpleButton14.Location = new System.Drawing.Point(330, 20);
             this.simpleButton14.Name = "simpleButton14";
-            this.simpleButton14.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton14.Size = new System.Drawing.Size(109, 33);
             this.simpleButton14.TabIndex = 3;
             this.simpleButton14.Text = "导入EXCEL";
             this.simpleButton14.Click += new System.EventHandler(this.simpleButton14_Click);
@@ -1392,9 +1398,9 @@
             this.simpleButton15.Appearance.Options.UseFont = true;
             this.simpleButton15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton15.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.Image")));
-            this.simpleButton15.Location = new System.Drawing.Point(195, 20);
+            this.simpleButton15.Location = new System.Drawing.Point(120, 20);
             this.simpleButton15.Name = "simpleButton15";
-            this.simpleButton15.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton15.Size = new System.Drawing.Size(85, 33);
             this.simpleButton15.TabIndex = 1;
             this.simpleButton15.Text = "修改";
             this.simpleButton15.Click += new System.EventHandler(this.simpleButton15_Click);
@@ -1405,9 +1411,9 @@
             this.simpleButton16.Appearance.Options.UseFont = true;
             this.simpleButton16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton16.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton16.Image")));
-            this.simpleButton16.Location = new System.Drawing.Point(334, 20);
+            this.simpleButton16.Location = new System.Drawing.Point(223, 20);
             this.simpleButton16.Name = "simpleButton16";
-            this.simpleButton16.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton16.Size = new System.Drawing.Size(85, 33);
             this.simpleButton16.TabIndex = 2;
             this.simpleButton16.Text = "删除";
             this.simpleButton16.Click += new System.EventHandler(this.simpleButton16_Click);
@@ -1422,7 +1428,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(907, 77);
+            this.groupBox4.Size = new System.Drawing.Size(726, 77);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "查询栏";
@@ -1433,16 +1439,16 @@
             this.simpleButton17.Appearance.Options.UseFont = true;
             this.simpleButton17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton17.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton17.Image")));
-            this.simpleButton17.Location = new System.Drawing.Point(479, 14);
+            this.simpleButton17.Location = new System.Drawing.Point(437, 20);
             this.simpleButton17.Name = "simpleButton17";
-            this.simpleButton17.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton17.Size = new System.Drawing.Size(88, 35);
             this.simpleButton17.TabIndex = 5;
             this.simpleButton17.Text = "检索";
             this.simpleButton17.Click += new System.EventHandler(this.simpleButton17_Click);
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(349, 29);
+            this.textEdit2.Location = new System.Drawing.Point(307, 27);
             this.textEdit2.MenuManager = this.ribbonControl1;
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(100, 20);
@@ -1451,7 +1457,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl3.Location = new System.Drawing.Point(276, 30);
+            this.labelControl3.Location = new System.Drawing.Point(234, 28);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(68, 16);
@@ -1460,7 +1466,7 @@
             // 
             // comboBoxEdit2
             // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(148, 29);
+            this.comboBoxEdit2.Location = new System.Drawing.Point(106, 27);
             this.comboBoxEdit2.MenuManager = this.ribbonControl1;
             this.comboBoxEdit2.Name = "comboBoxEdit2";
             this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1480,7 +1486,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl4.Location = new System.Drawing.Point(58, 30);
+            this.labelControl4.Location = new System.Drawing.Point(16, 28);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(85, 16);
@@ -1494,7 +1500,7 @@
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.MenuManager = this.ribbonControl1;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(907, 267);
+            this.gridControl3.Size = new System.Drawing.Size(726, 267);
             this.gridControl3.TabIndex = 0;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -1512,7 +1518,7 @@
             this.tabPage4.Controls.Add(this.splitContainer8);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1125, 431);
+            this.tabPage4.Size = new System.Drawing.Size(901, 431);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "工艺路线栏";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1531,7 +1537,7 @@
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.gridControl4);
-            this.splitContainer8.Size = new System.Drawing.Size(1125, 431);
+            this.splitContainer8.Size = new System.Drawing.Size(901, 431);
             this.splitContainer8.SplitterDistance = 156;
             this.splitContainer8.TabIndex = 0;
             // 
@@ -1549,7 +1555,7 @@
             // splitContainer9.Panel2
             // 
             this.splitContainer9.Panel2.Controls.Add(this.groupBox6);
-            this.splitContainer9.Size = new System.Drawing.Size(1125, 156);
+            this.splitContainer9.Size = new System.Drawing.Size(901, 156);
             this.splitContainer9.SplitterDistance = 75;
             this.splitContainer9.TabIndex = 0;
             // 
@@ -1563,7 +1569,7 @@
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(0, 0);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1125, 75);
+            this.groupBox5.Size = new System.Drawing.Size(901, 75);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "维护栏";
@@ -1574,9 +1580,9 @@
             this.simpleButton18.Appearance.Options.UseFont = true;
             this.simpleButton18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton18.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton18.Image")));
-            this.simpleButton18.Location = new System.Drawing.Point(612, 20);
+            this.simpleButton18.Location = new System.Drawing.Point(414, 20);
             this.simpleButton18.Name = "simpleButton18";
-            this.simpleButton18.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton18.Size = new System.Drawing.Size(118, 33);
             this.simpleButton18.TabIndex = 4;
             this.simpleButton18.Text = "导出EXCEL";
             this.simpleButton18.Click += new System.EventHandler(this.simpleButton18_Click);
@@ -1587,9 +1593,9 @@
             this.simpleButton19.Appearance.Options.UseFont = true;
             this.simpleButton19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton19.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton19.Image")));
-            this.simpleButton19.Location = new System.Drawing.Point(58, 20);
+            this.simpleButton19.Location = new System.Drawing.Point(17, 20);
             this.simpleButton19.Name = "simpleButton19";
-            this.simpleButton19.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton19.Size = new System.Drawing.Size(85, 33);
             this.simpleButton19.TabIndex = 0;
             this.simpleButton19.Text = "添加";
             this.simpleButton19.Click += new System.EventHandler(this.simpleButton19_Click);
@@ -1600,9 +1606,9 @@
             this.simpleButton20.Appearance.Options.UseFont = true;
             this.simpleButton20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton20.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton20.Image")));
-            this.simpleButton20.Location = new System.Drawing.Point(479, 20);
+            this.simpleButton20.Location = new System.Drawing.Point(290, 20);
             this.simpleButton20.Name = "simpleButton20";
-            this.simpleButton20.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton20.Size = new System.Drawing.Size(118, 33);
             this.simpleButton20.TabIndex = 3;
             this.simpleButton20.Text = "导入EXCEL";
             this.simpleButton20.Click += new System.EventHandler(this.simpleButton20_Click);
@@ -1613,9 +1619,9 @@
             this.simpleButton21.Appearance.Options.UseFont = true;
             this.simpleButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton21.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton21.Image")));
-            this.simpleButton21.Location = new System.Drawing.Point(195, 20);
+            this.simpleButton21.Location = new System.Drawing.Point(108, 20);
             this.simpleButton21.Name = "simpleButton21";
-            this.simpleButton21.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton21.Size = new System.Drawing.Size(85, 33);
             this.simpleButton21.TabIndex = 1;
             this.simpleButton21.Text = "修改";
             this.simpleButton21.Click += new System.EventHandler(this.simpleButton21_Click);
@@ -1626,9 +1632,9 @@
             this.simpleButton22.Appearance.Options.UseFont = true;
             this.simpleButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton22.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton22.Image")));
-            this.simpleButton22.Location = new System.Drawing.Point(334, 20);
+            this.simpleButton22.Location = new System.Drawing.Point(199, 20);
             this.simpleButton22.Name = "simpleButton22";
-            this.simpleButton22.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton22.Size = new System.Drawing.Size(85, 33);
             this.simpleButton22.TabIndex = 2;
             this.simpleButton22.Text = "删除";
             this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
@@ -1643,7 +1649,7 @@
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(0, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1125, 77);
+            this.groupBox6.Size = new System.Drawing.Size(901, 77);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "查询栏";
@@ -1654,16 +1660,16 @@
             this.simpleButton23.Appearance.Options.UseFont = true;
             this.simpleButton23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton23.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton23.Image")));
-            this.simpleButton23.Location = new System.Drawing.Point(479, 14);
+            this.simpleButton23.Location = new System.Drawing.Point(414, 28);
             this.simpleButton23.Name = "simpleButton23";
-            this.simpleButton23.Size = new System.Drawing.Size(109, 51);
+            this.simpleButton23.Size = new System.Drawing.Size(86, 35);
             this.simpleButton23.TabIndex = 5;
             this.simpleButton23.Text = "检索";
             this.simpleButton23.Click += new System.EventHandler(this.simpleButton23_Click);
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(349, 29);
+            this.textEdit3.Location = new System.Drawing.Point(305, 35);
             this.textEdit3.MenuManager = this.ribbonControl1;
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(100, 20);
@@ -1672,7 +1678,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl5.Location = new System.Drawing.Point(276, 30);
+            this.labelControl5.Location = new System.Drawing.Point(232, 36);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(68, 16);
@@ -1681,7 +1687,7 @@
             // 
             // comboBoxEdit3
             // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(148, 29);
+            this.comboBoxEdit3.Location = new System.Drawing.Point(104, 35);
             this.comboBoxEdit3.MenuManager = this.ribbonControl1;
             this.comboBoxEdit3.Name = "comboBoxEdit3";
             this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1699,7 +1705,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl6.Location = new System.Drawing.Point(58, 30);
+            this.labelControl6.Location = new System.Drawing.Point(14, 36);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(85, 16);
@@ -1713,7 +1719,7 @@
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.MenuManager = this.ribbonControl1;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(1125, 271);
+            this.gridControl4.Size = new System.Drawing.Size(901, 271);
             this.gridControl4.TabIndex = 1;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -1730,7 +1736,7 @@
             this.tabPage5.Controls.Add(this.webBrowser2);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1125, 431);
+            this.tabPage5.Size = new System.Drawing.Size(901, 431);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "预览栏";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1741,7 +1747,7 @@
             this.webBrowser2.Location = new System.Drawing.Point(0, 0);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(1125, 431);
+            this.webBrowser2.Size = new System.Drawing.Size(901, 431);
             this.webBrowser2.TabIndex = 0;
             // 
             // imageList1
@@ -1841,11 +1847,36 @@
             this.imageList3.Images.SetKeyName(0, "自行车.png");
             this.imageList3.Images.SetKeyName(1, "零件.png");
             // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem30);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "系统管理";
+            // 
+            // barButtonItem29
+            // 
+            this.barButtonItem29.Caption = "关闭系统";
+            this.barButtonItem29.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.Glyph")));
+            this.barButtonItem29.Id = 45;
+            this.barButtonItem29.Name = "barButtonItem29";
+            this.barButtonItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem29.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem29_ItemClick);
+            // 
+            // barButtonItem30
+            // 
+            this.barButtonItem30.Caption = "重启系统";
+            this.barButtonItem30.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.Glyph")));
+            this.barButtonItem30.Id = 46;
+            this.barButtonItem30.Name = "barButtonItem30";
+            this.barButtonItem30.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem30.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem30_ItemClick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 630);
+            this.ClientSize = new System.Drawing.Size(1161, 630);
             this.Controls.Add(this.splitContainer1);
             this.Name = "MainForm";
             this.Text = "MainForm";
@@ -2093,5 +2124,8 @@
         private System.Windows.Forms.TreeView treeView3;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.ImageList imageList3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem29;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem30;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
     }
 }
