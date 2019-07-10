@@ -29,7 +29,14 @@ namespace PDM
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            string sql = "update PDM_users set 用户名='"+YHM.Text+"',用户密码='"+YHMM.Text+"',用户权限='"+YHQX.Text+"'where 用户id='"+YHID.Text+"'";
+            DataBaseApplication.ExecuteNonQuery(sql);
+            MessageBox.Show("修改成功！");
+        }
 
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

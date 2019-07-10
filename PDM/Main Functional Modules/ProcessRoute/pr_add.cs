@@ -61,11 +61,13 @@ namespace PDM
 
         private void process_route_Load(object sender, EventArgs e)
         {
+            /*
             //连接数据库
             DataBaseApplication.DataSource = "(local)";
             DataBaseApplication.DataBaseName = "Practice";
             DataBaseApplication.UserID = "sa";
             DataBaseApplication.PassWord = "sa"; ;
+            */
         }
     }
 }

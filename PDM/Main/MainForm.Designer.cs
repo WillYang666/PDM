@@ -73,10 +73,13 @@
             this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
+            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -180,9 +183,6 @@
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -665,6 +665,24 @@
             this.barStaticItem7.Name = "barStaticItem7";
             this.barStaticItem7.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
+            // barButtonItem29
+            // 
+            this.barButtonItem29.Caption = "关闭系统";
+            this.barButtonItem29.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.Glyph")));
+            this.barButtonItem29.Id = 45;
+            this.barButtonItem29.Name = "barButtonItem29";
+            this.barButtonItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem29.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem29_ItemClick);
+            // 
+            // barButtonItem30
+            // 
+            this.barButtonItem30.Caption = "重启系统";
+            this.barButtonItem30.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.Glyph")));
+            this.barButtonItem30.Id = 46;
+            this.barButtonItem30.Name = "barButtonItem30";
+            this.barButtonItem30.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem30.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem30_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -696,6 +714,13 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem28);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "数据库";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem30);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "系统管理";
             // 
             // ribbonStatusBar1
             // 
@@ -1847,38 +1872,16 @@
             this.imageList3.Images.SetKeyName(0, "自行车.png");
             this.imageList3.Images.SetKeyName(1, "零件.png");
             // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem29);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem30);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "系统管理";
-            // 
-            // barButtonItem29
-            // 
-            this.barButtonItem29.Caption = "关闭系统";
-            this.barButtonItem29.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.Glyph")));
-            this.barButtonItem29.Id = 45;
-            this.barButtonItem29.Name = "barButtonItem29";
-            this.barButtonItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem29.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem29_ItemClick);
-            // 
-            // barButtonItem30
-            // 
-            this.barButtonItem30.Caption = "重启系统";
-            this.barButtonItem30.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.Glyph")));
-            this.barButtonItem30.Id = 46;
-            this.barButtonItem30.Name = "barButtonItem30";
-            this.barButtonItem30.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem30.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem30_ItemClick);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 630);
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

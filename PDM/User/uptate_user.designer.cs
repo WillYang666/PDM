@@ -48,6 +48,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(119, 52);
             this.simpleButton2.TabIndex = 19;
             this.simpleButton2.Text = "取消修改";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 

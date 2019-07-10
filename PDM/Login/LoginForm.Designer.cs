@@ -39,6 +39,7 @@
             this.Nameid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -73,6 +74,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.Ok);
             this.splitContainer1.Panel2.Controls.Add(this.retreat);
             this.splitContainer1.Panel2.Controls.Add(this.Password);
@@ -86,7 +88,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::PDM.Properties.Resources._567UmWZIYJ8;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(531, 190);
@@ -108,7 +110,7 @@
             this.Ok.Size = new System.Drawing.Size(87, 27);
             this.Ok.TabIndex = 33;
             this.Ok.Tag = "1";
-            this.Ok.Text = "  登 陆";
+            this.Ok.Text = "  登 录";
             this.Ok.UseVisualStyleBackColor = false;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
@@ -128,6 +130,7 @@
             this.retreat.Tag = "1";
             this.retreat.Text = "  退 出";
             this.retreat.UseVisualStyleBackColor = false;
+            this.retreat.Click += new System.EventHandler(this.retreat_Click);
             // 
             // Password
             // 
@@ -178,6 +181,17 @@
             this.label1.Tag = "1";
             this.label1.Text = "用户名：";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Location = new System.Drawing.Point(442, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "配置数据库->";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -186,6 +200,7 @@
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -210,5 +225,6 @@
         private System.Windows.Forms.TextBox Nameid;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

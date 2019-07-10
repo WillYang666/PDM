@@ -24,12 +24,13 @@ namespace PDM
 
         private void AddWL_Load(object sender, EventArgs e)
         {
+            /*
             //连接数据库
             DataBaseApplication.DataSource = "(local)";
             DataBaseApplication.DataBaseName = "Practice";
             DataBaseApplication.UserID = "sa";
             DataBaseApplication.PassWord = "sa";
-
+            */
         }
 
         private void button3_Click(object sender, EventArgs e)
