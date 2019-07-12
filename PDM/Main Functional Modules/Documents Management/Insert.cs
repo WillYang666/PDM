@@ -65,7 +65,7 @@ namespace PDM
                 BinaryReader br = new BinaryReader(fs);
                 Byte[] byData = br.ReadBytes((int)fs.Length);//获取长度
 
-                string conn = "server=(local);database=Practice;Uid=sa;Pwd=sa ";//连接数据库
+                string conn = "server='"+PublicPass.db_host+"';database='"+PublicPass.db_databasename+"';Uid='"+PublicPass.db_username+"';Pwd='"+PublicPass.db_userpassword+"' ";//连接数据库
                 SqlConnection myconn = new SqlConnection(conn);
                 myconn.Open();
                 string str = "insert into file_pictures (名称,描述,建立者,建立时间,文件,编号) values('"+textEdit_name.Text.ToString()+"','"+textEdit_describe.Text.ToString() + "','"+textEdit_founder.Text.ToString() + "','"+textEdit_time.Text.ToString()+ "',@file,'"+textEdit_id.Text.ToString()+"')";
@@ -84,7 +84,7 @@ namespace PDM
                 BinaryReader br = new BinaryReader(fs);
                 Byte[] byData = br.ReadBytes((int)fs.Length);//获取长度
 
-                string conn = "server=(local);database=Practice;Uid=sa;Pwd=sa ";//连接数据库
+                string conn = "server='" + PublicPass.db_host + "';database='" + PublicPass.db_databasename + "';Uid='" + PublicPass.db_username + "';Pwd='" + PublicPass.db_userpassword + "' ";//连接数据库
                 SqlConnection myconn = new SqlConnection(conn);
                 myconn.Open();
                 string str = "insert into file_words (名称,描述,建立者,建立时间,文件,编号) values('" + textEdit_name.Text.ToString() + "','" + textEdit_describe.Text.ToString() + "','" + textEdit_founder.Text.ToString() + "','" + DateTime.Now.ToString() + "',@file,'" + textEdit_id.Text.ToString() + "')";
